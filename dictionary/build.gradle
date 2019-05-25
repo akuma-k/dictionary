@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 28
-
 
     defaultConfig {
         minSdkVersion 19
@@ -20,7 +20,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+}
 
+publish {
+    userOrg = 'akuma'
+    groupId = 'com.akuma.dictionary'
+    artifactId = 'dictionary'
+    publishVersion = '0.0.1'
+    desc = 'dictionary function'
+    website = 'https://github.com/akuma-k/dictionary'
+    issueTracker = "${website}/issues"
+    repository = "${website}.git"
 }
 
 dependencies {
