@@ -23,7 +23,7 @@ android {
 }
 
 publish {
-    userOrg = 'akuma'
+    userOrg = 's-studio'
     groupId = 'com.akuma.dictionary'
     artifactId = 'dictionary'
     publishVersion = '0.0.1'
